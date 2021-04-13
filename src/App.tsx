@@ -4,7 +4,6 @@ import Tetris from './components/Tetris';
 const App = () => {
   return (
     <div className="App">
-      {/* <Counter /> */}
       <Tetris />
     </div>
   );
