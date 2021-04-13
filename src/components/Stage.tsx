@@ -7,7 +7,9 @@ type Props = {
 
 const Stage: React.FC<Props> = ({ stage }) => (
     <div>
-        <Cell type={'hello'} />
+        {
+            stage.map((row: any[]) => row.map((cell: any, x: number) => <Cell key={x} type={cell[0]} />))
+        }
     </div>
 )
 
