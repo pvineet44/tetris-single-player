@@ -1,11 +1,10 @@
-import React from 'react';
-import { StyledStartButton } from './styles/StyledStartButton'
+import React from 'react'
+import { StyledStartButton } from './styles/StyledStartButton';
 
-type Props = {
+type Callback = {
     callback: any
 }
-
-const StartButton: React.FC<Props> = ({ callback }) => {
+const StartButton: React.FC<Callback> = ({ callback }) => {
     return (
         <StyledStartButton onClick={callback}>Start Game</StyledStartButton>
     )

@@ -7,8 +7,11 @@ type Prop = {
     gameOver: boolean
 }
 
-const Display: React.FC<Prop> = ({ gameOver, text }) => (
-    <StyledDisplay gameOver={gameOver}>{text}</StyledDisplay>
-);
+const Display: React.FC<Prop> = ({ gameOver, text }) => {
+    return (
+        <StyledDisplay gameOver={gameOver}>{text}</StyledDisplay>
+    )
+}
 
 export default Display;
+
